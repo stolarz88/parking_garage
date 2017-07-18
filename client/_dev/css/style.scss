@@ -1,0 +1,56 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-size: 16px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     width: 100%;
+     height:100%;
+     margin: 0;
+     padding: 0;
+     color:#040404;
+     background: #FFF;
+	table {
+		tr {
+			&.blue {
+				background: rgb(33,150,243);
+			}
+			&.red {
+				background: rgb(241,71,40);
+			}
+		}
+          td, th {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+          }
+	}
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width:768px){
+     .mdl-data-table {
+          overflow:scroll;
+     }
+}
+
+@media screen and (min-width:769px) and (max-width:1440px){
+     
+}
